@@ -11,7 +11,10 @@
 <script type="text/javascript" src="javascript/js/hash.js"></script>
 </head>
 <body>
-<noscript><h1>Enable JavaScript</h1></noscript>
+
+	<noscript>
+		<h1>Enable JavaScript</h1>
+	</noscript>
 
 <script type="text/javascript">
 //pge numbers
@@ -32,17 +35,17 @@ function checkIfImageExists(url, callback) {
       };
     }
   }
+  
+  var PgesNumber = 16 ;
+// for (let i = 1; i < PgesNumber+1; i++) {
 
-var PgesNumber = 16 ;
-for (let i = 1; i < PgesNumber+1; i++) {
+//     checkIfImageExists("pages/"+i+1+".webp", (exists) => {
+//       if (exists) {
+//         NumberOfPages=i
+//       } else {}
+//     });
 
-    checkIfImageExists("pages/"+i+1+".webp", (exists) => {
-      if (exists) {
-        NumberOfPages=i
-      } else {}
-    });
-
-  }
+//   }
 
 
 
