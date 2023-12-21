@@ -47,11 +47,11 @@ var PgesNumber = 14 ;
 
 
 var disp = '';
-var wid = 1508;
+var wid = window.innerWidth;
 var hei = 600;
 if (window.innerWidth <= 425){
     disp = 'single';
-	wid = 808;
+	wid = window.innerWidth * 0.6;
     hei = 650;
 }else{
     disp = 'double';
