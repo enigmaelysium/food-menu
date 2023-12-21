@@ -33,9 +33,10 @@ function checkIfImageExists(url, callback) {
     }
   }
 
-for (let i = 1; i < 100; i++) {
+var PgesNumber = 16 ;
+for (let i = 1; i < PgesNumber+1; i++) {
 
-    checkIfImageExists("pages/"+i+".webp", (exists) => {
+    checkIfImageExists("pages/"+i+1+".webp", (exists) => {
       if (exists) {
         NumberOfPages=i
       } else {}
@@ -43,7 +44,6 @@ for (let i = 1; i < 100; i++) {
 
   }
 
-var PgesNumber = 16 ;
 
 
 var disp = '';
